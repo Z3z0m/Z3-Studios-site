@@ -12,7 +12,7 @@
             <ul>
                 <li><a href='index.html'>Início</a></li>
                 <li><a href='sobre.html'>Sobre</a></li>
-                <li><a href='produtos.html'>Serviços</a></li>
+                <li><a href='produtos.html'>Produtos</a></li>
                 <li><a href='novidades.html'>Novidades</a></li>
                 <li><a href='contato.html'>Contato</a></li>
             </ul>
@@ -20,29 +20,39 @@
     </header>
 
     <main class='container'>
-        <h1>Serviços</h1>
+        <h1>Produtos já feitos</h1>
 
         <button onclick='filtrar()'>Mostrar</button>
 
         <div class='grid'>
-            <div class='card'>
-                <img src='img/proj1.png'>
-                <p>Projeto 1</p>
+            <div class='card' onclick="productLinkOpen('candy')">
+                <img src='img/CandyHunt_cover.png'>
+                <p>Candy Hunt, jogo VR Mobile/google cardboard onde o objetivo é colhetar o maximo de doces possível, no menor tempo.</p>
             </div>
 
-            <div class='card'>
-                <img src='img/proj2.png'>
-                <p>Projeto 2</p>
+            <div class='card' onclick="productLinkOpen('doces')">
+                <img src='img/DocesSantos_cover.png'>
+                <p>Doces Santos foi um projeto feito, para mobile e WebGL em parceria com o Museu Nacional, com o auxilio do Ludens.</p>
             </div>
 
-            <div class='card'>
-                <img src='img/proj3.png'>
-                <p>Projeto 3</p>
+            <div class='card' onclick="productLinkOpen('crossing')">
+                <img src='img/crossingGenerations_cover.png'>
+                <p>Crossing generations é um jogo WebGL feito para o concurso GameJam+ de 2024, chegando até a final do concurso.</p>
             </div>
 
-            <div class='card'>
-                <img src='img/proj4.png'>
-                <p>Projeto 4</p>
+            <div class='card' onclick="productLinkOpen('semeando')">
+                <img src='img/SemeandoSaberes_cover.png'>
+                <p>Semando Saberes foi um projeto feito, para VR Meta Quest, com o objetivo de incentivar e demonstar a agricultura familiar como fonte de renda.</p>
+            </div>
+
+            <div class='card' onclick="productLinkOpen('shadow')">
+                <img src='img/ShadowSneak_cover.png'>
+                <p>Shadow Sneak foi um projeto feito para uma gamejam europeia, com a tematica de "Sombras", tambem o primeiro projeto feito com essa equipe.</p>
+            </div>
+
+            <div class='card' onclick="productLinkOpen('cool')">
+                <img src='img/CoolIt_cover.png'>
+                <p>Cool It foi um projeto feito para uma Gamejam brasileira com o tema "Conexões", onde a equipe tentou ir para outra via, fazendo conexões de um watercooler.</p>
             </div>
         </div>
     </main>

@@ -1,24 +1,43 @@
-function enviar() {
+// ======================= content ===========================
+
+const socialLinks = {
+    ig: 'https://www.instagram.com/z3_studios_/',
+    yt: 'https://www.youtube.com/@Z3_Studios',
+    tk: 'https://www.tiktok.com/@z3_studios_',
+}
+
+const productLinks = {
+    candy: 'https://z3z0m.itch.io/candy-hunt',
+    doces: 'https://ludensmn.itch.io/doces-santos-o-jogo',
+    crossing: 'https://z3z0m.itch.io/crossinggenerations',
+    semando: 'https://z3z0m.itch.io/semeando-saberes-tcp6',
+    shadow: 'https://z3z0m.itch.io/shadow-sneak',
+    cool: 'https://z3z0m.itch.io/cool-it',
+}
+
+// ======================= Functions ===========================
+
+function msgSend() 
+{
     alert('Mensagem enviada com sucesso!')
 }
 
-function filtrar() {
+function filter() 
+{
     document.querySelectorAll('.card').forEach(c => c.style.display = 'block')
 }
 
-function abrirInstagram() {
-    window.open('https://www.instagram.com/z3_studios_/', '_blank')
+function socialLinkOpen(id)
+{
+    window.open(socialLinks[id], '_blank')
+}
+function productLinkOpen(id)
+{
+    window.open(productLinks[id], '_blank')
 }
 
-function abrirYouTube() {
-    window.open('https://www.youtube.com/@Z3_Studios', '_blank')
-}
-
-function abrirTikTok() {
-    window.open('https://www.tiktok.com/@z3_studios_', '_blank')
-}
-
-function enviarWhatsApp() {
+function sendWhatsAppMsg() 
+{
     const hora = new Date().getHours()
 
     let saudacao = ''
