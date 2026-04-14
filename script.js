@@ -1,0 +1,1 @@
+function enviar(){alert('Mensagem enviada com sucesso!')}function filtrar(){document.querySelectorAll('.card').forEach(c=>c.style.display='block')}
