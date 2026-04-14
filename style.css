@@ -70,3 +70,22 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.social-container {
+    margin-top: 30px;
+}
+
+.social-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.social-row button {
+    width: 100%;
+}
+
+.whatsapp-btn {
+    margin-top: 10px;
+    width: 100%;
+}
